@@ -1,6 +1,17 @@
 # Evaluation tool (supplement for EVO)
 
-This repository provides **an extra evaluation tool** for TextSLAM dataset, and serves as a supplement for [EVO](https://github.com/MichaelGrupp/evo).
+This repository provides **an extra evaluation tool** for [TextSLAM dataset](https://github.com/SJTU-ViSYS/TextSLAM-Dataset/), and serves as a supplement for [EVO](https://github.com/MichaelGrupp/evo).
+
+**Project: TextSLAM: Visual SLAM with Semantic Planar Text Features**
+
+**Authors**: [Boying Li](https://leeby68.github.io/), [Danping Zou](https://drone.sjtu.edu.cn/dpzou/), Yuan Huang, Xinghan Niu, Ling Pei and Wenxian Yu.
+
+📝 [[Paper]](https://ieeexplore.ieee.org/abstract/document/10285400)
+&emsp;
+🔥 [[Code]](https://github.com/SJTU-ViSYS/TextSLAM/)
+&emsp;
+➡️ [[Dataset]](https://github.com/SJTU-ViSYS/TextSLAM-Dataset/)
+&emsp;
 
 EVO does not automatically rectify the misalignment between the SLAM body frame and the ground-truth body, as shown in the figure. 
 The misalignment leads to large RPE errors when directly using EVO for evaluation. 
@@ -12,10 +23,9 @@ Note that the misalignment does not affect APE results.
 
 :star: **Related Paper:**<br>
 
-- **TextSLAM: Visual SLAM with Semantic Planar Text Features.** [[paper]](https://arxiv.org/abs/2305.10029)
-[[project]](https://leeby68.github.io/TextSLAM/)
-[[dataset]]()
-[[code]](https://github.com/SJTU-ViSYS/TextSLAM)<br>
+- **TextSLAM: Visual SLAM with Semantic Planar Text Features.** [[paper]](https://ieeexplore.ieee.org/abstract/document/10285400)
+[[code]](https://github.com/SJTU-ViSYS/TextSLAM)
+[[dataset]](https://github.com/SJTU-ViSYS/TextSLAM-Dataset/)<br>
 Boying Li, Danping Zou, Yuan Huang, Xinghan Niu, Ling Pei, Wenxian Yu <br>
 *IEEE Transactions on Pattern Analysis and Machine Intelligence (TPAMI). 2023*
 
