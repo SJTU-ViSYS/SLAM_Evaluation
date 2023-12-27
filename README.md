@@ -6,11 +6,11 @@ This repository provides **an extra evaluation tool** for [TextSLAM dataset](htt
 
 **Authors**: [Boying Li](https://leeby68.github.io/), [Danping Zou](https://drone.sjtu.edu.cn/dpzou/), Yuan Huang, Xinghan Niu, Ling Pei and Wenxian Yu.
 
+🏠 [[Project]](https://leeby68.github.io/TextSLAM/)
+&emsp;
 📝 [[Paper]](https://ieeexplore.ieee.org/abstract/document/10285400)
 &emsp;
 🔥 [[Code]](https://github.com/SJTU-ViSYS/TextSLAM/)
-&emsp;
-➡️ [[Dataset]](https://github.com/SJTU-ViSYS/TextSLAM-Dataset/)
 &emsp;
 
 EVO does not automatically rectify the misalignment between the SLAM body frame and the ground-truth body, as shown in the figure. 
@@ -18,22 +18,19 @@ The misalignment leads to large RPE errors when directly using EVO for evaluatio
 We hence provide this tool to align the two body frames by an optimization that minimizes their orientation difference before EVO evaluation. 
 Note that the misalignment does not affect APE results.
 
-<img src="./pic/RPE_Problem.png"  width ="500" align = "center" />
-<div align='center'><em> Misalignment issue when using EVO. </em></div>
+<div align="center">
+<img src="./pic/RPE_Problem.png"  width ="500"/><br>
+<em> Misalignment issue when using EVO. </em>
+</div>
 
-:star: **Related Paper:**<br>
+Our **accompanying videos** are now available on YouTube (click below images to open) and Bilibili<sup>[1-outdoor](https://www.bilibili.com/video/BV1pe411B7kx/?spm_id_from=333.999.0.0&vd_source=404d99588f2e4c0ce1cca75ed492e620), [2-night](https://www.bilibili.com/video/BV1kC4y1M7tk/?spm_id_from=333.999.0.0&vd_source=404d99588f2e4c0ce1cca75ed492e620), [3-rapid](https://www.bilibili.com/video/BV1Au4y1T7DE/?spm_id_from=333.999.0.0&vd_source=404d99588f2e4c0ce1cca75ed492e620)</sup>.
+<div align="center">
+<a href="https://youtu.be/ug-FvJKTXJY" target="_blank"><img src="https://github.com/SJTU-ViSYS/TextSLAM/blob/main/pic/TextSLAM-frontPage.png" alt="video" width="32%" /></a>
+<a href="https://youtu.be/PYrZ5kiIC0Q" target="_blank"><img src="https://github.com/SJTU-ViSYS/TextSLAM/blob/main/pic/TextSLAM-frontPage.png" alt="video" width="32%" /></a>
+  <a href="https://youtu.be/3Ml6070Hgd8" target="_blank"><img src="https://github.com/SJTU-ViSYS/TextSLAM/blob/main/pic/TextSLAM-frontPage.png" alt="video" width="32%" /></a>
+</div>
 
-- **TextSLAM: Visual SLAM with Semantic Planar Text Features.** [[paper]](https://ieeexplore.ieee.org/abstract/document/10285400)
-[[code]](https://github.com/SJTU-ViSYS/TextSLAM)
-[[dataset]](https://github.com/SJTU-ViSYS/TextSLAM-Dataset/)<br>
-Boying Li, Danping Zou, Yuan Huang, Xinghan Niu, Ling Pei, Wenxian Yu <br>
-*IEEE Transactions on Pattern Analysis and Machine Intelligence (TPAMI). 2023*
-
-- **TextSLAM: Visual SLAM with Planar Text Features.** [[paper]](https://arxiv.org/abs/1912.05002)<br>
-Boying Li, Danping Zou, Daniele Sartori, Ling Pei, Wenxian Yu <br>
-*IEEE International Conference on Robotics and Automation (ICRA). 2020*
-
-:star: **Citation:**
+:star: Please consider citing the following papers in your publications if the project helps your works.
 ```
 @article{li2023textslam,
   title={TextSLAM: Visual SLAM with Semantic Planar Text Features},
