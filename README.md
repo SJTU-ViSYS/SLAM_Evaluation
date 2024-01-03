@@ -12,6 +12,8 @@ This repository provides **an extra evaluation tool** for [TextSLAM dataset](htt
 &emsp;
 🔥 [[Code]](https://github.com/SJTU-ViSYS/TextSLAM/)
 &emsp;
+➡️ [[Dataset]](https://github.com/SJTU-ViSYS/TextSLAM-Dataset/)
+&emsp;
 
 EVO does not automatically rectify the misalignment between the SLAM body frame and the ground-truth body, as shown in the figure. 
 The misalignment leads to large RPE errors when directly using EVO for evaluation. 
