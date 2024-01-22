@@ -36,7 +36,7 @@ void optimize::optimize_q(double *pose_q, const vector<pose> &Traj_ref, const ve
     std::chrono::steady_clock::time_point t0 = std::chrono::steady_clock::now();
     ceres::Problem problem;
 
-    problem.AddParameterBlock(pose_q, 4, new ceres::QuaternionParameterization());
+    problem.AddParameterBlock(pose_q, 4, new ceres::EigenQuaternionManifold());
 
     for(size_t i_pose = 0; i_pose<Traj_ref.size(); i_pose++){
         LossFunction* loss_function = nullptr;
