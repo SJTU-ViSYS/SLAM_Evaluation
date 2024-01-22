@@ -36,7 +36,7 @@ def record_traj(traj, file_name, save_name):
     np.savetxt(file_name[:-4]+save_name+".txt", data_print, fmt="%.2f %.11f %.11f %.11f %.11f %.11f %.11f %.11f", delimiter=" ")       
 
 
-def main_evo_info(seq_gt_file, seq_est_file):
+def main_evo_info(seq_gt_file, seq_est_file, t_offset):
     print("read gt file from {}".format(seq_gt_file))
     print("read est file from {}".format(seq_est_file))
 
@@ -49,7 +49,7 @@ def main_evo_info(seq_gt_file, seq_est_file):
 
     # Synchronizes
     max_diff = 0.01
-    traj_ref, traj_est = sync.associate_trajectories(traj_ref, traj_est, max_diff)
+    traj_ref, traj_est = sync.associate_trajectories(traj_ref, traj_est, max_diff, t_offset)
     traj_est_aligned = copy.deepcopy(traj_est)
     # Align positions
     r_a, t_a, s = traj_est_aligned.align(traj_ref, correct_scale=True, correct_only_scale=False)
@@ -72,6 +72,7 @@ if __name__ == "__main__":
 
     parser.add_argument('-ref', help='path of reference file')
     parser.add_argument('-est', help='path of estimation file')
+    parser.add_argument("--t_offset", type=float, default=0.0,help="constant timestamp offset for data association")
 
     if len(sys.argv) == 1:
         parser.print_help()
@@ -81,4 +82,5 @@ if __name__ == "__main__":
 
     seq_gt = args.ref
     seq_est = args.est
-    main_evo_info(seq_gt, seq_est)
+    t_offset = args.t_offset
+    main_evo_info(seq_gt, seq_est, t_offset)
